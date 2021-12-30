@@ -1,0 +1,18 @@
+SonarQube:(integration)
+ - Widely used qode quality scanner.
+ - Scan all our app codes 
+ - Based on the rules(mentioned qulity profiles and gates) defined in sonarqube it will scan and share the code qulity defects/bugs in code/apps before or after the build
+
+Requirement: 
+ - Sonarqube installation pre-requisites A VM with minimum of 2 gb of RAM ( AWS t2.medium) Docker and docker-compose installed and docker service running 
+ - Use user
+
+
+ - Mention volume map in docker-compose.yml file and create/givePermissions from instance using below commands
+ - Create Dir's locally
+sudo mkdir -p /opt/sonarqube/conf /opt/sonarqube/data /opt/sonarqube/extensions /opt/sonarqube/lib/bundled-plugins /opt/sonarqube/logs
+
+ - sudo mkdir -p /var/lib/postgresql/data /var/lib/postgresql
+
+ - Permission to sonar cube:
+sudo chown -R 200:200 /opt/sonarqube/conf /opt/sonarqube/data /opt/sonarqube/extensions /opt/sonarqube/lib/bundled-plugins /opt/sonarqube/logs

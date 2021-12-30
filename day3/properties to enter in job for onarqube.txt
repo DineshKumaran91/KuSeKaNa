@@ -1,0 +1,4 @@
+sonar.host.url=http://44.201.116.9:9000/
+sonar.login=6f41d8dc54d9b64afbc1df40f207407f395eca4e
+sonar.projectKey=Sample_Maven
+sonar.java.binaries=target

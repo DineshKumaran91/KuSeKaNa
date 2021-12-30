@@ -1,0 +1,4 @@
+ - Create credential -> create pat text and add it into jenkins as user
+ - configure the sonarqube server
+ - configure the sonarqube scanner with latest version
+ - Add sonarscanner in POM.xml
